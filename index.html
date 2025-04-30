@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Tailoring Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Resume Tailoring Tool</h1>
+    <div class="container">
+        <label for="resume">Paste Your Resume:</label>
+        <textarea id="resume" placeholder="Paste your resume here..."></textarea>
+
+        <label for="job-description">Paste Job Description:</label>
+        <textarea id="job-description" placeholder="Paste the job description here..."></textarea>
+
+        <label for="page-length">Target Resume Length (in pages):</label>
+        <input type="number" id="page-length" value="1" min="1">
+
+        <button onclick="generateCoverLetter()">Generate Cover Letter</button>
+        <button onclick="resizeResume()">Get Resume Resizing Guidance</button>
+
+        <div class="output">
+            <h2>Output:</h2>
+            <pre id="output"></pre>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
